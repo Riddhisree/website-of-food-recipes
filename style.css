@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #33685e;
+  --secondary-color: #64827d;
+  --gray-color: #919191;
+  --primary-font-poppins: "Poppins", sans-serif;
+}
+
+body {
+  font-family: var(--primary-font-poppins);
+}
+
+/* ------------ header start ------------ */
+
+header {
+  /* background-color: var(--primary-color); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 1rem 4vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  backdrop-filter: blur(20px);
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+.header-left a {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.header-center {
+  display: flex;
+  gap: 2rem;
+}
+
+.header-right {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.header-right img {
+  width: 1rem;
+  cursor: pointer;
+}
+
+/* ------------ header end ------------ */
+
+/* ------------ hero section start --------------- */
+
+main {
+  background-color: #33685e;
+  padding-top: 8rem;
+  padding-left: 4vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-left {
+  width: 36%;
+  margin-top: 10rem;
+}
+
+.happy-customers::after {
+  height: 6rem;
+  width: 16rem;
+  background-color: rgba(255, 255, 255, 0.468);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: inherit;
+  rotate: 6deg;
+  z-index: -99;
+}
+
+.happy-customers {
+  height: 6rem;
+  width: 16rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+  z-index: 9;
+}
+
+.rating-starts {
+  display: flex;
+  gap: 4px;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.rating-starts span::before {
+  content: "|";
+  margin-inline: 10px;
+}
+
+.hero-left .hero-subheading {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-block: 2rem;
+}
+
+.hero-left h1 {
+  font-size: 4rem;
+  color: white;
+  line-height: 4.5rem;
+}
+
+.explore-card {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.explore-card a {
+  background-color: #fff;
+  color: var(--secondary-color);
+  padding: 0.6rem 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 0.5rem;
+}
+
+.explore-card div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: white;
+  cursor: pointer;
+}
+.explore-card div img {
+  width: 2.6rem;
+}
+
+.hero-right {
+  width: 50%;
+  position: relative;
+  height: 100%;
+}
+
+.burger-img {
+  width: 100%;
+  margin-top: -150px;
+  z-index: 99;
+  position: relative;
+}
+
+.fluid-bg {
+  position: absolute;
+  width: 20%;
+  top: -1rem;
+  right: 50rem;
+  z-index: 0;
+}
+
+.burger-behind-img {
+  width: 100%;
+  margin-top: -90rem;
+  z-index: 9;
+  position: relative;
+}
+
+.star-img {
+  width: 20%;
+  z-index: 999;
+  margin-top: -50rem;
+  position: relative;
+}
+
+.discount-wrapper {
+  background-image: url("images/svg/rounded-border-start.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6rem;
+  width: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  rotate: -20deg;
+  z-index: 99;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1.3rem;
+  color: var(--secondary-color);
+}
+
+.discount-wrapper img {
+  width: 6rem;
+}
+
+/* ------------------- hero section end ------------------- */
+
+.hot-items-section {
+  background-color: var(--primary-color);
+}
+
+.hot-items-subheading {
+  padding-bottom: 4rem;
+}
+
+.hot-items-heading,
+.hot-items-subheading {
+  color: white;
+  text-align: center;
+}
+/* 
+.hot-items-heading::before,
+.hot-items-heading::after {
+  content: "";
+  height: 2px;
+  width: 2rem;
+  background-color: #fff;
+  display: inline-block;
+} */
+
+.hot-items-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.hot-items-heading span {
+  height: 3px;
+  width: 2rem;
+  background-color: rgb(255, 255, 255);
+  display: block;
+}
+
+.recipes-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-bottom: 4rem;
+}
+
+.recipes-wrapper a {
+  /* background-color: aqua; */
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid white; */
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  background-color: var(--secondary-color);
+  border-radius: 2rem;
+  transition: scale 0.3s ease-in-out;
+}
+
+.recipes-wrapper a:hover {
+  scale: 1.02;
+}
+
+.recipe-name {
+  font-weight: bold;
+  size: 1.9rem;
+  align-self: flex-start;
+  padding-bottom: 1rem;
+}
+
+.learn-more {
+  align-self: flex-start;
+  color: rgb(0, 0, 255);
+}
+
+.recipes-wrapper a img {
+  width: 100%;
+  /* border: 2px solid white; */
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  /* border-bottom: 1px solid white; */
+}
